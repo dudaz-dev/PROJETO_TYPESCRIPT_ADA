@@ -21,7 +21,6 @@ Este projeto é uma simulação de um sistema de gerenciamento de uma biblioteca
 - **TypeScript:** Tipagem estática e organização do código.
 - **Node.js:** Ambiente de execução.
 - **ES6 Modules:** Para modularização e melhor manutenção do código.
-- **Console Logger:** Para monitorar ações como adição, remoção e empréstimo de itens.
 
 ## ⚙️ Instalação e Execução
 
