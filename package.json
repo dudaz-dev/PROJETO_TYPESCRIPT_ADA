@@ -1,0 +1,16 @@
+{
+  "name": "projeto_typescript_ada",
+  "version": "1.0.0",
+  "description": "Este projeto é uma simulação de um sistema de gerenciamento de uma biblioteca, desenvolvido em TypeScript. Ele permite o cadastro, atualização, remoção e controle de disponibilidade de diferentes tipos de itens do acervo, como livros, revistas, CDs e DVDs. O projeto usa conceitos de Programação Orientada a Objetos (POO), garantindo a organização do código e a segurança através da tipagem estática.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2"
+  }
+}
