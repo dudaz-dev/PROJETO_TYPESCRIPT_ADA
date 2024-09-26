@@ -6,7 +6,7 @@ Logger.setLogLevel(LogLevel.DEBUG);
 
 const biblioteca = new Biblioteca();
 
-const livro1 = new Livro("Harry Potter e a Pedra Filosofal", "Rowling, J.k.", "ROCCO", "9788532511010", "Estante 1", "Prateleira 1");
+const livro1 = new Livro("Harry Potter e a Pedra Filosofal", "Rowling J.k.", "ROCCO", "9788532511010", "001", "001");
 
 biblioteca.registrarItem(livro1);
 

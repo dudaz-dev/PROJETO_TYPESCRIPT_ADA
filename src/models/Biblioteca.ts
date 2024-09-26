@@ -7,7 +7,8 @@ export class Biblioteca {
 
   registrarItem<T extends itemAcervo>(item: T): void {
     this.acervo.push(item);
-    Logger.info(`Item registrado e adicionado ao acervo: ${item.obterDetalhes()}`);
+    Logger.info(`Item registrado e adicionado ao acervo: 
+${item.obterDetalhes()}`);
   }
 
   // Função para ver a lista de todos os itens do nosso acervo

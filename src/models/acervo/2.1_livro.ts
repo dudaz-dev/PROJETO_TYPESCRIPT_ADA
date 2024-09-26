@@ -9,6 +9,12 @@ export class Livro extends Publicacao {
   }
 
   obterDetalhes(): string {
-    return `Livro: ${this.titulo} por ${this.autor}, Editora: ${this.editora}, ISBN: ${this.ISBN}, Localização: ${this.obterLocalizacao()}, Status: ${this.status}`;
+    return `    Livro: ${this.titulo} 
+    Escritor: ${this.autor}, 
+    Editora: ${this.editora},                
+    ISBN: ${this.ISBN},                      
+    Localização: ${this.obterLocalizacao()}, 
+    Status: ${this.status}
+    -------------------------------------------------------------`;
   }
 }

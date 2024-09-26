@@ -20,7 +20,7 @@ export abstract class itemAcervo implements Localizar {
   abstract obterDetalhes(): string;
 
   obterLocalizacao(): string {
-    return `Estante: ${this.estante}, Prateleira: ${this.prateleira}`;
+    return `Estante ${this.estante}, Prateleira ${this.prateleira}`;
   }
 
   getStatus(): StatusItem {
