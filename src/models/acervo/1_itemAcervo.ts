@@ -23,4 +23,12 @@ export abstract class itemAcervo implements Localizar {
     return `Estante: ${this.estante}, Prateleira: ${this.prateleira}`;
   }
 
+  getStatus(): StatusItem {
+    return this.status;
+  }
+
+  setStatus(status: StatusItem): void {
+    this.status = status;
+
+  }
 }
