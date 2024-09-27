@@ -57,6 +57,10 @@ Este projeto é uma simulação de um sistema de gerenciamento de uma biblioteca
    Após a compilação, execute o projeto com Node.js:
 
    ```bash
+   chcp 65001
+   ```
+
+   ```bash
    node dist/index.js
    ```
 
