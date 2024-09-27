@@ -1,4 +1,4 @@
-import { ItemAcervo } from '../models/ItemAcervo';
+import { ItemAcervo } from '../models/library/ItemAcervo';
 
 export class BibliotecaService {
     private acervo: ItemAcervo[] = [];
