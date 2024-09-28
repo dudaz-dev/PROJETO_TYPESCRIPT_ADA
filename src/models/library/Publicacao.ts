@@ -13,8 +13,4 @@ export abstract class Publicacao extends ItemAcervo {
   descricao(): string {
     return `${this.titulo}, por ${this.autor}, publicado por ${this.editora} em ${this.ano}.`;
   }
-
-  editar(): void {
-    throw new Error("Method not implemented.");
-  }
 }

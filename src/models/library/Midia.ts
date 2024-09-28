@@ -8,8 +8,4 @@ export abstract class Midia extends ItemAcervo {
   descricao(): string {
     return `${this.titulo}, duração de ${this.duracao} minutos, lançado em ${this.ano}.`;
   }
-
-  editar(): void {
-    throw new Error("Method not implemented.");
-  }
 }
