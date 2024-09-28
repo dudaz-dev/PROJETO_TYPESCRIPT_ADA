@@ -63,6 +63,8 @@ Este projeto é uma simulação de um sistema de gerenciamento de uma biblioteca
    ```bash
    node dist/index.js
    ```
+## Diagrama
+![image](https://github.com/user-attachments/assets/04bdd099-1215-474f-9cd6-68cb640fcb0a)
 
 ## Desenvolvedores 👩‍💻
 
