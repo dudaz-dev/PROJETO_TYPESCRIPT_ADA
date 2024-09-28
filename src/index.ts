@@ -4,6 +4,7 @@ import { Livro } from "./models/library/Livro";
 import { CD } from "./models/library/CD";
 import { DVD } from "./models/library/DVD";
 import { Revista } from "./models/library/Revista";
+import { questionIgnoreEmpty } from "./utils/questionIgonoreEmpty";
 
 const biblioteca = new BibliotecaService();
 
@@ -29,12 +30,12 @@ do {
 
   switch (opcao) {
     case 1:
-      const tituloLivro = readline.question("Título do Livro: ");
+      const tituloLivro = questionIgnoreEmpty("Título do Livro: ");
       const anoLivro = readline.questionInt("Ano de Publicação: ");
-      const autor = readline.question("Autor: ");
-      const editora = readline.question("Editora: ");
-      const localizacaoLivro = readline.question("Localização do Livro: ");
-      const isbn = readline.question("ISBN: ");
+      const autor = questionIgnoreEmpty("Autor: ");
+      const editora = questionIgnoreEmpty("Editora: ");
+      const localizacaoLivro = questionIgnoreEmpty("Localização do Livro: ");
+      const isbn = questionIgnoreEmpty("ISBN: ");
       const livro = new Livro(
         tituloLivro,
         anoLivro,
@@ -46,20 +47,20 @@ do {
       biblioteca.adicionarItem(livro);
       break;
     case 2:
-      const tituloCD = readline.question("Título do CD: ");
+      const tituloCD = questionIgnoreEmpty("Título do CD: ");
       const anoCD = readline.questionInt("Ano de Publicação: ");
-      const artista = readline.question("Artista: ");
+      const artista = questionIgnoreEmpty("Artista: ");
       const duracaoCD = readline.questionInt("Duração (minutos): ");
-      const localizacaoCD = readline.question("Localização do CD: ");
+      const localizacaoCD = questionIgnoreEmpty("Localização do CD: ");
       const cd = new CD(tituloCD, anoCD, duracaoCD, artista, localizacaoCD);
       biblioteca.adicionarItem(cd);
       break;
     case 3:
-      const tituloDVD = readline.question("Título do DVD: ");
+      const tituloDVD = questionIgnoreEmpty("Título do DVD: ");
       const anoDVD = readline.questionInt("Ano de Publicação: ");
-      const diretor = readline.question("Diretor: ");
+      const diretor = questionIgnoreEmpty("Diretor: ");
       const duracaoDVD = readline.questionInt("Duração (minutos): ");
-      const localizacaoDVD = readline.question("Localização do DVD: ");
+      const localizacaoDVD = questionIgnoreEmpty("Localização do DVD: ");
       const dvd = new DVD(
         tituloDVD,
         anoDVD,
@@ -70,12 +71,14 @@ do {
       biblioteca.adicionarItem(dvd);
       break;
     case 4:
-      const tituloRevista = readline.question("Título da Revista: ");
+      const tituloRevista = questionIgnoreEmpty("Título da Revista: ");
       const anoRevista = readline.questionInt("Ano de Publicação: ");
-      const autorRevista = readline.question("Autor: ");
-      const editoraRevista = readline.question("Editora: ");
+      const autorRevista = questionIgnoreEmpty("Autor: ");
+      const editoraRevista = questionIgnoreEmpty("Editora: ");
       const edicaoRevista = readline.questionInt("Edição da Revista: ");
-      const localizacaoRevista = readline.question("Localização da Revista: ");
+      const localizacaoRevista = questionIgnoreEmpty(
+        "Localização da Revista: "
+      );
       const revista = new Revista(
         tituloRevista,
         anoRevista,
